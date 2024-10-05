@@ -104,3 +104,29 @@ body{
 
 /* signup,login */
 
+#signup_and_login{
+    margin-left: 19em;
+    width: 13em;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2em;
+
+}
+#signup_and_login h3{
+    color: #b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+    scale: 0.8;
+}
+#signup_and_login button{
+    border-radius: 30px;
+    padding: 1.2em 2.2em;
+}
+#signup_and_login span{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: medium;
+    scale: 0.7;
+    font-weight: 550;
+}
