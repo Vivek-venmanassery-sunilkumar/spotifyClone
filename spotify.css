@@ -1,3 +1,6 @@
+:root{
+    font-size: 16px;
+}
 body{
  margin: 0;   
 }
@@ -49,7 +52,9 @@ body{
     fill:  white;
 } */
 
-
+#text_input_in_focus:focus-within{
+    color: white;
+}
 #searchbar{
     position: relative;
     height: 44px;
@@ -119,14 +124,171 @@ body{
     color: #b3b3b3;
     font-family: Arial, Helvetica, sans-serif;
     scale: 0.8;
+    cursor: pointer;
+}
+
+#signup_and_login h3:hover{
+    scale: 0.9;
+    color: white;
 }
 #signup_and_login button{
     border-radius: 30px;
     padding: 1.2em 2.2em;
+    background-color: white;
 }
 #signup_and_login span{
     font-family: Arial, Helvetica, sans-serif ;
     font-size: medium;
     scale: 0.7;
+    font-weight: 550;
+}
+
+#signup_and_login button:hover{
+    scale: 1.05;
+    background-color: hsl(0, 3%, 89%);
+}
+
+
+/* section2 left side div */
+#section2{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100vw;
+    height: 40rem;
+    background-color: transparent;
+}
+
+#section2leftside{
+    width: 23.5rem;
+    height: 100%;
+    background-color:  #121212;
+    border-radius: 3%;
+    margin:0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* section2 left side library section */
+
+#section2leftsidelibrarydiv{
+    width: 90%;
+    margin: 0.4rem 1rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#section2leftsidelibrarydiv button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: 8.5rem;
+}
+#section2leftsidelibrarydiv button:hover h3{
+    color: white;
+}
+#section2leftsidelibrarysvg{
+    fill: #b3b3b3;
+    transition: fill 0.33s;
+}
+#section2leftsidelibrarydiv button:hover #section2leftsidelibrarysvg{
+    fill: white;
+}
+#section2leftsidelibrarydiv h3{
+    color: #b3b3b3;
+    font-size: 0.95rem;
+    font-weight: 750;
+    transition: color 0.33s;
+}
+
+#section2leftsidelibrarydiv span{
+    position: relative;
+}
+
+#section2leftsidelibrarydiv span::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: transparent;
+}
+#leftsidelibrarydiv_cross_svg{
+    position: relative;
+    z-index: 5;
+}
+#section2leftsidelibrarydiv span:hover::after{
+    background-color: #2a2a2a;
+}
+#leftsidelibrarydiv_cross_svg{
+    fill: #b3b3b3;
+    transition: fill 0.33s;
+}
+
+#section2leftsidelibrarydiv span:hover #leftsidelibrarydiv_cross_svg{
+    fill: white;
+}
+
+/* section2 left side 2nd and 3rd div abbreviation s2ls*/
+
+#s2ls_first{
+    width: 94%;
+    height: 21%;
+    background-color: #1f1f1f;
+    border-radius: 3%;
+    margin: 0.8rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+#s2ls_first_text_elts{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+#s2ls_first_text_elts h4{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1.5rem 1.5rem;
+    padding: 0;
+    font-size: 0.9rem;
+    font-weight: 550;
+    scale: 1.05;  
+}
+#s2ls_first_text_elts h5{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin:  0 1rem;
+    font-weight: 600;
+    margin-top: -0.6rem;
+    scale: 1;
+}
+
+#s2ls_first button{
+    padding: 0;
+    width: 8rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    height:2rem;
+    border-radius: 64px;
+    border: none;
+    transform: translateY(-20%);
+}
+
+#s2ls_first button:hover{
+    scale: 1.05;
+}
+#s2ls_first button span{
     font-weight: 550;
 }
