@@ -179,6 +179,7 @@ body{
     height: 4rem;
     margin: 0.5rem 0.5rem;
     background:linear-gradient(90deg, #af2896, #509bf5);
+    position: fixed;
 }
 
 /* section2 left side library section */
@@ -340,7 +341,50 @@ body{
     font-weight: 550;
 }
 
-
+/* s2ls third */
+#s2ls_third{
+    margin: 1rem 1rem;
+    height: 14%;
+    width: 94%;
+    padding-top: 4rem;
+}
+#grid_s2ls_third p{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color:  #b3b3b3;
+}
+#grid_s2ls_third{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+#s2ls_third h6{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 2.6rem;
+    cursor: pointer;
+}
+#s2ls_third h6::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+}
+#s2ls_third h6:hover::after{
+    height: 2px;
+}
 /* section 2 right side abbr s2rs */
 
 #section2rightside{
@@ -552,6 +596,7 @@ body{
 
 .company_details h5{
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.95rem;
     margin: 0;
     padding: 0;
@@ -587,7 +632,24 @@ body{
     height: 2px;
 }
 
+.company_details ol li:hover span{
+    color: white;
+}
 
+#last_part_main{
+    height: 7rem;
+    margin: 1rem 1rem;
+    border-top: 1px solid #b3b3b3; 
+}
+#last_part_main p{
+    color:#b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1rem;
+    scale: 0.9;
+    margin-left: -2.5rem;
+    font-weight: 550;
+
+}
 
 /* gridboxes styling */
 
@@ -603,9 +665,40 @@ body{
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
 }
+
+.svg_icon_playbutton{
+    position: absolute;
+    top: 8.5rem;
+    left: 8rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    visibility: collapse;
+    transition: transform 0.33s;
+}
+.svg_icon_playbutton svg{
+    position: relative;
+    z-index: 6;
+}
+.svg_icon_playbutton span::after{
+    position: absolute;
+    content: '';
+    background-color: rgb(23, 233, 23);
+    top: 50%;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    translate: -50%  -50%;
+    border-radius: 50%;
+}
+
 .each_gridbox:hover{
     background:linear-gradient(to top,rgb(34, 33, 33),#212020 );
+}
+.each_gridbox:hover .svg_icon_playbutton{
+    transform: translateY(-0.5rem);
+    visibility: visible;
 }
 .imagediv_inside_s2rs{
     height: 11rem;
@@ -684,4 +777,60 @@ body{
 
 .each_gridbox a:hover p span::after{
     height: 2px;
+}
+
+
+
+/* section3  */
+#section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#text_elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    gap: 0.4rem;
+}
+#section3 h5{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+    font-weight: 550;
+}
+
+#section3 h4{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#section3_button{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+}
+#section3_button button{
+    width: 9rem;
+    height: 3rem;
+    margin-left: 10rem;
+    border-radius: 3.5rem;
+    border: none;
+}
+#section3_button span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+#section3_button button:hover{
+    scale: 1.05;
+    cursor: pointer;
 }
