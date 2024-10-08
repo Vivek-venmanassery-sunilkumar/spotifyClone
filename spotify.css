@@ -827,6 +827,23 @@ body{
 }
 #social_links svg{
     margin-top:2.6rem ;
+    position: relative;
+    z-index: 2;
+}
+
+#social_links span{
+    position: relative;
+}
+#social_links span::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    transform: translate(-50%, -320%);
+    border-radius: 50%;
+    background-color: #2a2a2a;
 }
 
 /* section3  */
