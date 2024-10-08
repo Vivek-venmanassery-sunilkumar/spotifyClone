@@ -348,7 +348,7 @@ body{
     margin-right: 0.5rem;
     height: 100%;
     flex-grow: 1;
-    background: linear-gradient(to bottom,#2a2a2a,#121212);
+    background: linear-gradient(to bottom,#212020,#121212);
     border-radius: 10px;
     display: block;
     overflow-y: scroll;
@@ -532,6 +532,63 @@ body{
     height: 2px;
 }
 
+/* s2rs second last div */
+
+#second_last_div_s2rs{
+    width: 97%;
+    height: 17rem;
+    margin: 1em 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.company_details{
+    width: 13rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+}
+
+.company_details h5{
+    color: white;
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 0;
+}
+
+.company_details ol{
+    list-style-type: none;
+    padding: 0;
+
+}
+.company_details ol li{
+    padding-top: 1rem;
+}
+
+.company_details ol li span{
+    color:  #b3b3b3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 550;
+    cursor: pointer;
+    position: relative;
+}
+.company_details ol li span::after{
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+}
+.company_details ol li:hover span::after{
+    height: 2px;
+}
+
+
+
 /* gridboxes styling */
 
 .gridboxes_inside_s2rs{
@@ -545,7 +602,10 @@ body{
 .each_gridbox{
     display: flex;
     flex-direction: column;
-
+    cursor: pointer;
+}
+.each_gridbox:hover{
+    background:linear-gradient(to top,rgb(34, 33, 33),#212020 );
 }
 .imagediv_inside_s2rs{
     height: 11rem;
@@ -586,4 +646,42 @@ body{
     color: #b3b3b3;
     font-size: 0.8rem;
     font-weight: 550;
+}
+
+.each_gridbox a{
+    text-decoration: none;
+}
+.each_gridbox  h6 span{
+    position: relative;
+}
+
+.each_gridbox h6 span::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+}
+.each_gridbox a:hover h6 span::after{
+    height: 2px;
+}
+
+.each_gridbox p span{
+    position: relative;
+}
+
+.each_gridbox p span::after{
+    content: '';
+    position: absolute;
+    background-color: #b3b3b3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+}
+
+.each_gridbox a:hover p span::after{
+    height: 2px;
 }
